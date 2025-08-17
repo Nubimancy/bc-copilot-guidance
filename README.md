@@ -114,7 +114,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🤖 For AI Agents
 
-If you're an AI assistant working in this repository, please refer to [COPILOT-README.md](COPILOT-README.md) for specialized guidance on content standards, code patterns, and repository-specific context.
+If you're an AI assistant working in this repository, please refer to [.copilot-instructions.md](.copilot-instructions.md) for specialized guidance on content standards, code patterns, and repository-specific context.
 
 ---
 
