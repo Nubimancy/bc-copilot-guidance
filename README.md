@@ -28,6 +28,51 @@ Whether you're a solo developer, part of a team, or contributing to the communit
 - **AI Prompting Help** → [Prompting Strategies](copilot-techniques/prompting-strategies.md)
 - **Project Planning** → [Development Lifecycle](project-management/feature-development-lifecycle.md)
 
+### 🔌 Plug-and-Play Setup (PowerShell)
+
+Add this guidance as a git submodule and run the installer to auto-configure lightweight compliance hooks (non-invasive by default).
+
+1) Add the submodule (HTTPS)
+
+```powershell
+git submodule add https://github.com/Nubimancy/bc-copilot-guidance copilot-guidance
+git submodule update --init --recursive
+```
+
+2) Run the installer
+
+- From the project root:
+
+```powershell
+pwsh -File ./copilot-guidance/scripts/install-bc-copilot-guidance.ps1
+```
+
+- Or from inside the submodule (auto-detects project root):
+
+```powershell
+cd ./copilot-guidance
+pwsh -File ./scripts/install-bc-copilot-guidance.ps1
+```
+
+Optional flags
+- Preview only:
+
+```powershell
+pwsh -File ./copilot-guidance/scripts/install-bc-copilot-guidance.ps1 -DryRun
+```
+
+- Enable PR gate and annotate AL files:
+
+```powershell
+pwsh -File ./copilot-guidance/scripts/install-bc-copilot-guidance.ps1 -EnableCI -AnnotateAL
+```
+
+To update later
+
+```powershell
+git submodule update --remote --merge copilot-guidance
+```
+
 ## 📁 Repository Structure
 
 ### **Core Development Workflows**
