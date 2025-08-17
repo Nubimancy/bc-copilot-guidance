@@ -75,8 +75,29 @@ table 50100 "Sample Table"
 - Cross-references use relative links
 - Assets in `/assets/` folders
 
+### User Experience Assessment
+**Before providing guidance, assess user comfort level:**
+
+"Hi! It's great to be helping you out with Business Central development. Before I dive in, can I ask a couple quick questions about your experience? This helps me tailor my guidance to be most useful for you:
+
+**AL/Business Central Development:**
+- New to AL/BC development
+- Familiar with AL basics  
+- Experienced AL developer
+- BC architect/expert level
+
+**AI-Assisted Coding:**
+- Never used Copilot/AI for coding
+- Tried it a few times, still learning
+- Regular user, comfortable with AI suggestions
+- Advanced agentic workflows
+
+Based on your answers, I'll adjust my suggestions, prompts, and explanations accordingly!"
+
 ### AI Enhancement Context
 This repository teaches: GitHub Copilot for BC development, better AI prompts, AI workflow integration, quality with AI assistance, accelerated development.
+
+**See ai-assistance/ folder for:** Experience-based guidance, prompt libraries, workflow patterns, adoption strategies
 
 ### Community Focus
 - Global BC developer audience

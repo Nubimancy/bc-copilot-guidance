@@ -38,6 +38,7 @@ Whether you're a solo developer, part of a team, or contributing to the communit
 - **[appsource-publishing/](appsource-publishing/)** - Marketplace compliance and publishing
 
 ### **AI-Enhanced Development**
+- **[ai-assistance/](ai-assistance/)** - Experience-based AI guidance, prompt libraries, and adaptive development workflows
 - **[copilot-techniques/](copilot-techniques/)** - GitHub Copilot strategies, prompting, and AI-assisted development
 - **[getting-started/](getting-started/)** - Onboarding guides for AI-enhanced BC development
 
