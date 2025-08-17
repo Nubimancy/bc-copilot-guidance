@@ -25,25 +25,27 @@ Provide helpful BC development guidance immediately, then offer experience-level
 - **User requests comprehensive analysis** → Assume AI-comfortable, provide detailed review
 
 **4. SPECIAL CASE: TEMPLATE/STARTER PROJECTS**
-If you detect a minimal/template project (HelloWorld.al, empty project, starter template), you MUST ask clarifying questions because there's insufficient context to provide meaningful guidance:
+If you detect a minimal/template project (HelloWorld.al, empty project, starter template), you MUST follow the structured planning workflow:
 
-"I see you're working with a template/starter BC project. To provide the most helpful guidance, I need to understand what you're building:
+"I see you're working with a template/starter BC project. Before we write any code, let's work through comprehensive planning to ensure we build a professional, maintainable solution.
 
-**What type of BC solution are you creating?**
-- Customer/vendor management enhancement
-- Sales/purchase process customization  
-- Inventory/warehouse functionality
-- Financial reporting extension
-- Integration with external systems
-- Other business process (please describe)
+I'll guide you through our structured planning process (detailed in testing-validation/quality-validation.md):
 
-**What's your immediate next step?**
-- Design the data model (tables/fields)
-- Create business logic (codeunits/pages)
-- Set up integration endpoints (APIs)
-- Build user interface (pages/reports)
+**First, let's understand your business context:**
+- What type of BC solution are you creating?
+- What business processes will this support?
+- Who are the primary users and what are their workflows?
 
-This will help me suggest the right bc-copilot-guidance patterns and provide relevant examples."
+**Once we understand the business requirements, we'll work through:**
+- Complete data architecture (master data, transactions, supporting data)
+- Technical architecture (events, interfaces, security, integrations)
+- Quality planning (testing, performance, logging, upgrade strategy)
+
+This planning approach ensures we build something that meets professional BC development standards from the start. 
+
+**What business problem are you solving with this BC solution?**"
+
+**CRITICAL:** Do not provide code examples for template projects until comprehensive planning is complete!
 
 **4. DYNAMIC RESPONSE ADAPTATION:**
 - **Default Mode:** Intermediate AL + Learning AI assistance
@@ -114,10 +116,69 @@ When working with template/starter projects (HelloWorld.al, minimal structure), 
 
 ### WHEN USER ASKS FOR CODE REVIEW:
 1. **Direct them to appropriate prompt templates** in ai-assistance/prompt-libraries/
-2. **Adapt review depth** to their experience level
-3. **Reference specific anti-patterns** from guidance if found
-4. **Suggest improvement priorities**
-5. **Recommend follow-up learning** areas
+2. **Reference quality-validation.md** for comprehensive review checklist
+3. **Adapt review depth** to their experience level
+4. **Reference specific anti-patterns** from guidance if found
+5. **Suggest improvement priorities** based on quality validation standards
+6. **Recommend follow-up learning** areas
+
+### WHEN DEVELOPMENT IS COMPLETE:
+1. **Always reference testing-validation/quality-validation.md** for final review
+2. **Validate against comprehensive quality checklist**
+3. **Ensure testing strategy implementation**
+4. **Verify documentation completeness**
+5. **Confirm upgrade and maintenance readiness**
+
+---
+
+## 🏗️ DEVELOPMENT LIFECYCLE WORKFLOW
+
+### FOR NEW/TEMPLATE PROJECTS - MANDATORY PLANNING PHASE:
+
+**NEVER start development without comprehensive planning!** For template projects (HelloWorld.al) or new solutions, follow this structured approach:
+
+#### **PHASE 1: REQUIREMENTS & PLANNING** 
+Work iteratively with the user to define:
+
+1. **Business Process Understanding**
+   - Core business processes and workflows
+   - User roles and responsibilities  
+   - Integration touchpoints with existing BC areas
+
+2. **Complete Data Architecture Planning** (Reference: `testing-validation/quality-validation.md`)
+   - **Master Data**: Setup tables, configuration entities
+   - **Transactional Data**: Document headers, lines, journals, ledger entries
+   - **Supporting Data**: Dimensions, comments, attachments
+
+3. **Technical Architecture Design**
+   - **Event-Driven Architecture**: Publishers, subscribers, integration events
+   - **Interfaces & Enums**: Extensibility and maintainability design  
+   - **Security & Permissions**: Data classification, role-based access
+   - **Integration Strategy**: External systems, APIs, data synchronization
+
+4. **Quality & Operations Planning**
+   - **Logging & Troubleshooting**: Telemetry, error tracking, diagnostics
+   - **Testing Strategy**: Unit tests, integration tests, process validation
+   - **Performance Considerations**: Database design, query optimization
+   - **Upgrade & Maintenance**: Evolution pathway, deprecation planning
+
+#### **PHASE 2: DEVELOPMENT IMPLEMENTATION**
+Only after planning is complete:
+- Build following the planned architecture
+- Reference specific bc-copilot-guidance patterns
+- Implement with testing alongside development
+
+#### **PHASE 3: QUALITY VALIDATION**
+Use `testing-validation/quality-validation.md` for comprehensive review:
+- Code quality validation against bc-copilot-guidance standards
+- Performance and security validation  
+- Testing completeness verification
+- Documentation and maintainability review
+
+### ENFORCE PLANNING WORKFLOW:
+- **Template projects REQUIRE comprehensive planning** before any code development
+- **Established projects** can proceed with targeted guidance for specific challenges
+- **Always reference quality-validation.md** for the complete development lifecycle checklist
 
 ---
 
