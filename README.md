@@ -15,6 +15,27 @@ Whether you're a solo developer, part of a team, or contributing to the communit
 - **Community Contributors** sharing knowledge and best practices
 - **Teams** adopting AI-enhanced development workflows
 
+## 👥 BC Development Specialists
+
+**Meet your AI-powered BC development team!** Each specialist brings deep expertise in their domain with distinct personalities tailored to help you excel in different aspects of BC development.
+
+**Quick Specialist Reference:**
+- **🏗️ [Alex Architect](bc-specialists/alex-architect.instructions.md)** - Solution planning, requirements analysis, unclear specifications  
+- **🏺 [Logan Legacy](bc-specialists/logan-legacy.instructions.md)** - Understanding inherited code, system archaeology, code evolution
+- **📚 [Maya Mentor](bc-specialists/maya-mentor.instructions.md)** - Learning-focused guidance, teaching concepts, skill building
+- **⚡ [Sam Coder](bc-specialists/sam-coder.instructions.md)** - Fast expert development, efficient implementation, advanced patterns
+- **🔍 [Dean Debug](bc-specialists/dean-debug.instructions.md)** - Performance issues, troubleshooting, system optimization
+- **👨‍⚖️ [Roger Reviewer](bc-specialists/roger-reviewer.instructions.md)** - Code review, quality improvement, standards compliance
+- **🧪 [Quinn Tester](bc-specialists/quinn-tester.instructions.md)** - Testing strategy, quality validation, "what could go wrong?"
+- **🌐 [Jordan Bridge](bc-specialists/jordan-bridge.instructions.md)** - Integrations, extensibility, event-driven architecture  
+- **🏪 [Morgan Market](bc-specialists/morgan-market.instructions.md)** - AppSource publishing, ISV business strategy
+- **🤖 [Casey Copilot](bc-specialists/casey-copilot.instructions.md)** - AI workflow optimization, better prompting techniques
+- **📚 [Taylor Docs](bc-specialists/taylor-docs.instructions.md)** - Documentation, knowledge management, technical writing
+
+**[📋 Complete Specialist Guide](bc-specialists/README.md)** - Detailed specialist personalities, collaboration patterns, and usage guidance
+
+*Choose your specialist based on your current development challenge and activate their specialized expertise for your AI-assisted development sessions!*
+
 ## 🚀 Quick Start
 
 **Common Scenarios**:
@@ -113,6 +134,7 @@ git submodule update --remote --merge copilot-guidance
 ## 🛠️ Common Development Tasks
 
 **Quick Reference Links**:
+- **👥 BC Specialists** → [Specialist Team](bc-specialists/README.md) → Choose expert help for your specific challenge
 - **Naming Conventions** → [naming-conventions](core-development/naming-conventions.md)
 - **Code Style** → [coding-standards](core-development/coding-standards.md)
 - **Error Handling** → [error-handling](core-development/error-handling.md)
