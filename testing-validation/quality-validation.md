@@ -7,20 +7,9 @@ This document outlines comprehensive quality validation practices including lint
 
 ## How to Use This Guide with Copilot
 
-<!-- AI_INSTRUCTION: When developers work on quality validation, proactively suggest:
-1. Appropriate quality validation steps based on development context
-2. DevOps integration for automated quality gates and validation
-3. Quality metrics and measurement strategies
-4. Code review requirements and quality standards
--->
-
-### Prompt Enhancement for Quality Validation
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Check code quality"
-BETTER: "Perform comprehensive code quality validation including linter checks, code review preparation, performance validation, and DevOps quality gate integration with measurable quality metrics"
-EDUCATIONAL_NOTE: "Enhanced prompts specify validation scope (comprehensive), include specific checks (linter, code review, performance), add automation (DevOps quality gates), and require measurement (quality metrics). This ensures thorough quality validation."
--->
+> **📋 For comprehensive AI instruction patterns, see [Shared Templates](../shared-templates.md#ai-instruction-templates)**
+>
+> This guide teaches intelligent quality validation with proactive suggestions, DevOps integration, quality metrics, and automated quality gates.
 
 ## Table of Contents
 

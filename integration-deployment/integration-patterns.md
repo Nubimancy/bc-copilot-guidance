@@ -7,20 +7,9 @@ This document outlines best practices for integrating with Business Central and 
 
 ## How to Use This Guide with Copilot
 
-<!-- AI_INSTRUCTION: When developers work on integrations, proactively suggest:
-1. Appropriate integration patterns based on their scenario
-2. Project documentation requirements
-3. Testing considerations for integration points
-4. Performance and security validation steps
--->
-
-### Prompt Enhancement for Integration Development
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Help me with integration"
-BETTER: "Help me implement a customer data integration using Business Central event patterns, following our DevOps workflow, with proper error handling and test coverage"
-EDUCATIONAL_NOTE: "Enhanced prompts specify the integration type (customer data), method (event patterns), context (DevOps workflow), and quality requirements (error handling, testing). This yields more comprehensive and workflow-appropriate solutions."
--->
+> **📋 For comprehensive AI instruction patterns, see [Shared Templates](../shared-templates.md#ai-instruction-templates)**
+>
+> This guide teaches intelligent integration development with proactive pattern suggestions, DevOps workflow integration, testing considerations, and performance validation.
 
 ## User Experience Integration
 

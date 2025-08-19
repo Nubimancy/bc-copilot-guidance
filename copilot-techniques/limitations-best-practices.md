@@ -9,20 +9,9 @@ applyTo: '**/*.al'
 
 ## How to Use This Guide with Copilot
 
-<!-- AI_INSTRUCTION: When providing AL development assistance, proactively:
-1. Acknowledge potential limitations in suggestions
-2. Recommend validation steps for generated code
-3. Suggest DevOps integration for code verification
-4. Provide alternative approaches when uncertain
--->
-
-### Self-Awareness Prompting for Copilot
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Generate AL code"
-BETTER: "Generate AL code with validation steps, acknowledging any limitations, and suggest verification against Business Central documentation and DevOps quality gates"
-EDUCATIONAL_NOTE: "Enhanced prompts request validation steps (verification), include self-awareness (limitations), reference standards (BC documentation), and consider workflow integration (DevOps quality gates). This yields more reliable and verifiable results."
--->
+> **📋 For comprehensive AI instruction patterns, see [Shared Templates](../shared-templates.md#ai-instruction-templates)**
+>
+> This guide teaches Copilot self-awareness about limitations, proactive validation strategies, and alternative approaches when uncertain.
 
 ## Common Pitfalls to Avoid
 

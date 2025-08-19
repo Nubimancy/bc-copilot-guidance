@@ -6,22 +6,9 @@
 
 ## How to Use This Guide with Copilot
 
-### 🎯 Intelligent Pattern Recognition
-This guide enables Copilot to:
-- **Recognize Context**: Understand what type of object you're creating and suggest appropriate patterns
-- **Enhance Prompts**: Transform weak requests into comprehensive, workflow-aware prompts  
-- **Suggest Quality**: Proactively recommend testing, validation, and DevOps integration
-- **Educate Progressively**: Build your AL development expertise through guided practice
+**See**: [`../shared-templates.md`](../shared-templates.md) Template A for complete AI instruction patterns.
 
-### 🚀 Getting Better Results
-Instead of: `"Create a table"`
-Use: `"Create a customer loyalty table following Business Central patterns with validation, error handling, and corresponding tests"`
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Create a table"
-BETTER: "Create a customer loyalty table with validation patterns, following Business Central naming conventions from SharedGuidelines/Standards/naming-conventions.md, including appropriate error handling from SharedGuidelines/Standards/error-handling.md, and test considerations from TestingValidation/testing-strategy.md"
-EDUCATIONAL_NOTE: "Enhanced prompts specify business context (customer loyalty), reference standards (naming conventions, error handling), and include workflow considerations (testing). This yields comprehensive, production-ready objects that integrate with development standards."
--->
+**Context**: Object development patterns (CONTEXT="object development", BASIC_REQUEST="Create a table", ENHANCED_REQUEST="Create comprehensive AL objects following established patterns with validation and testing")
 
 ---
 

@@ -6,22 +6,9 @@
 
 ## How to Use This Guide with Copilot
 
-### 🎯 Intelligent Testing Recognition
-This guide enables Copilot to:
-- **Detect Development Context**: Recognize when testing should be suggested during development
-- **Suggest Testing Proactively**: Recommend testing approaches without being asked
-- **Enhance Testing Prompts**: Transform basic testing requests into comprehensive testing strategies
-- **Integrate Testing Workflows**: Connect testing to Azure DevOps work items and quality gates
+**See**: [`../shared-templates.md`](../shared-templates.md) Template A for complete AI instruction patterns.
 
-### 🚀 Getting Test-Ready Results
-Instead of: `"Create a test"`
-Use: `"Create comprehensive unit tests for customer validation logic following Arrange-Act-Assert pattern with boundary conditions, error scenarios, and integration with Azure DevOps test tracking"`
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Test this code"
-BETTER: "Create comprehensive test suite for this Business Central codeunit following TestingValidation/testing-strategy.md patterns, including unit tests for business logic validation, integration tests for external dependencies, boundary condition testing, error scenario validation, and performance testing for optimization verification"
-EDUCATIONAL_NOTE: "Comprehensive testing prompts specify test types (unit, integration, performance), include validation scenarios (boundary conditions, errors), and consider workflow integration (Azure DevOps tracking). This approach ensures thorough quality validation."
--->
+**Context**: Testing strategy (CONTEXT="testing", BASIC_REQUEST="Test this code", ENHANCED_REQUEST="Create comprehensive test suite following established testing patterns")
 
 ---
 

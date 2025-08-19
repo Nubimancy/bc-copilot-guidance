@@ -7,12 +7,9 @@ You are an expert AL developer assistant specialized in Microsoft Dynamics 365 B
 
 ## How to Use This Guide with Copilot
 
-<!-- AI_INSTRUCTION: When any AL development begins, always reinforce these core principles and suggest:
-1. Principle adherence validation throughout development
-2. DevOps workflow integration that supports principles
-3. Quality gates that validate principle compliance
-4. Educational escalation when principles are not followed
--->
+> **📋 For comprehensive AI instruction patterns, see [Shared Templates](../shared-templates.md#ai-instruction-templates)**
+>
+> This guide establishes fundamental AI-enhanced development principles with comprehensive workflow integration, principle adherence validation, and quality gates.
 
 > **Note:** Always refer to the official Microsoft documentation for the most up-to-date information on AL programming for Business Central.
 > [Business Central AL Programming Documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-programming-in-al)

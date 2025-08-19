@@ -7,20 +7,9 @@ This comprehensive guide outlines best practices and advanced techniques for opt
 
 ## How to Use This Guide with Copilot
 
-<!-- AI_INSTRUCTION: When developers work on performance-critical code, proactively suggest:
-1. Appropriate optimization patterns based on their code structure
-2. Performance testing strategies and measurement techniques
-3. DevOps integration for performance monitoring
-4. Code review considerations for performance impact
--->
+**See**: [`../shared-templates.md`](../shared-templates.md) Template A for complete AI instruction patterns.
 
-### Prompt Enhancement for Performance Optimization
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Make this code faster"
-BETTER: "Optimize this customer processing loop using SetLoadFields and efficient query patterns, with performance measurement and DevOps integration for ongoing monitoring"
-EDUCATIONAL_NOTE: "Enhanced prompts specify the optimization approach (SetLoadFields, efficient queries), include measurement requirements, and consider DevOps integration. This yields more comprehensive and measurable performance improvements."
--->
+**Context**: Performance optimization (CONTEXT="performance optimization", BASIC_REQUEST="Make this code faster", ENHANCED_REQUEST="Optimize performance with measurement and validation using established patterns")
 
 ## Query Optimization and Database Performance
 

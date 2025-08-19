@@ -8,7 +8,7 @@
 2. [Code Structure Anti-Patterns](#code-structure-anti-patterns) 
 3. [Integration Anti-Patterns](#integration-anti-patterns)
 4. [Performance Anti-Patterns](#performance-anti-patterns)
-5. [Error Handling Anti-Patterns](#error-handling-anti-patterns)
+5. [Error Handling Anti-Patterns](#error-handling-anti-patterns) - See consolidated guide
 6. [Extension Anti-Patterns](#extension-anti-patterns)
 
 ---
@@ -353,72 +353,13 @@ end;
 
 ## Error Handling Anti-Patterns
 
-### ❌ Generic Error Messages
+**⚠️ Error handling anti-patterns have been consolidated into the comprehensive error handling guide.**
 
-**Legacy Approach:**
-```al
-// Don't do this - provides no actionable information
-if ValidationFailed then
-    Error('Validation failed');
-    
-Customer.TestField("Payment Terms Code"); // Generic "must have a value" message
-
-if not HttpResponse.IsSuccessStatusCode then
-    Error('API call failed'); // No context about what to do
-```
-
-**Modern Approach:**
-```al
-// ✅ Specific, actionable error messages with ErrorInfo
-procedure ValidateCustomer(var Customer: Record Customer)
-var
-    ValidationError: ErrorInfo;
-begin
-    if Customer."Payment Terms Code" = '' then begin
-        ValidationError.Message := 'Payment terms are required for customer processing';
-        ValidationError.DetailedMessage := 'Customer must have payment terms assigned before creating orders or invoices.';
-        ValidationError.AddAction('Open Payment Terms', Codeunit::"Customer Actions", 'OpenPaymentTerms');
-        ValidationError.AddAction('Set Default Terms', Codeunit::"Customer Actions", 'SetDefaultTerms');
-        Error(ValidationError);
-    end;
-end;
-```
-
-### ❌ Silent Failure Patterns
-
-**Legacy Approach:**
-```al
-// Don't do this - hides problems from users and logs
-procedure SyncCustomerData()
-begin
-    if not TryCallExternalAPI() then
-        exit; // Silent failure - no logging, no user notification
-end;
-
-procedure ProcessOrder()
-begin
-    TryValidateInventory(); // Ignores validation result
-    PostOrder(); // Proceeds anyway
-end;
-```
-
-**Modern Approach:**
-```al
-// ✅ Explicit error handling with proper logging
-procedure SyncCustomerData()
-var
-    ErrorMessage: Text;
-begin
-    if not TryCallExternalAPI() then begin
-        ErrorMessage := GetLastErrorText();
-        Session.LogMessage('CustomerSync', ErrorMessage, Verbosity::Error, 
-                          DataClassification::SystemMetadata, TelemetryScope::ExtensionPublisher);
-        
-        // Inform user about the issue
-        Message('Customer synchronization failed. The issue has been logged for review.');
-    end;
-end;
-```
+**See**: [`core-development/error-handling.md`](../core-development/error-handling.md) for:
+- ❌ Generic Error Messages vs ✅ ErrorInfo with Actions
+- ❌ Silent Failure Patterns vs ✅ Explicit Error Handling
+- ❌ Technical Messages to Users vs ✅ Progressive Error Disclosure
+- Complete anti-pattern examples with modern alternatives
 
 ---
 

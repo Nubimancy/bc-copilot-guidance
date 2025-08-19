@@ -7,9 +7,20 @@ This document provides complete guidance for error handling in Business Central 
 
 ## How to Use This Guide with Copilot
 
-> **📋 For comprehensive AI instruction patterns, see [Shared Templates](../shared-templates.md#ai-instruction-templates)**
->
-> This guide teaches comprehensive error handling from basic principles to modern ErrorInfo patterns with proactive prevention, DevOps integration, and user experience focus.
+<!-- AI_INSTRUCTION: When developers work on error handling, proactively suggest:
+1. ErrorInfo patterns for actionable error messages with user guidance
+2. Error prevention strategies and validation patterns  
+3. Progressive error disclosure for technical vs user-facing errors
+4. DevOps integration for error monitoring, logging, and continuous improvement
+-->
+
+### Prompt Enhancement for Error Handling
+
+<!-- PROMPT_EDUCATION: 
+WEAK: "Add error handling"
+BETTER: "Implement comprehensive ErrorInfo-based error handling with actionable user messages, suggested recovery actions, progressive error disclosure, logging integration, and DevOps monitoring for improved user experience and system reliability"
+EDUCATIONAL_NOTE: "Enhanced prompts specify modern ErrorInfo approach, include user experience (actionable messages, recovery actions), add technical considerations (progressive disclosure, logging), consider monitoring (DevOps), and focus on outcomes. This ensures thorough, modern error handling."
+-->
 
 ## Table of Contents
 

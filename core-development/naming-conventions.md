@@ -7,20 +7,9 @@ This document outlines the comprehensive naming conventions for variables, param
 
 ## How to Use This Guide with Copilot
 
-<!-- AI_INSTRUCTION: When developers work on AL naming, proactively suggest:
-1. Naming convention compliance based on object or variable type
-2. Consistency validation across related objects and variables
-3. DevOps integration for naming convention validation
-4. Code review considerations for naming quality
--->
+**See**: [`shared-templates.md`](../shared-templates.md) Template B for complete AI instruction patterns.
 
-### Prompt Enhancement for Naming
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Name this object"
-BETTER: "Generate appropriate AL object names following our naming conventions, with consistency validation across related objects and DevOps integration for automated naming compliance checking"
-EDUCATIONAL_NOTE: "Enhanced prompts reference standards (naming conventions), request validation (consistency across objects), and include automation (DevOps integration, compliance checking). This ensures comprehensive naming quality."
--->
+**Context**: Naming conventions (STANDARDS_CONTEXT="naming conventions", BASIC_STANDARDS_REQUEST="Fix naming", ENHANCED_STANDARDS_REQUEST="Apply consistent naming conventions following established patterns")
 
 ## Table of Contents
 

@@ -6,22 +6,9 @@
 
 ## How to Use This Guide with Copilot
 
-### 🎯 Intelligent Compliance Recognition
-This guide enables Copilot to:
-- **Detect AppSource Context**: Recognize when you're working on AppSource extensions
-- **Suggest Compliance Proactively**: Recommend compliance requirements without being asked
-- **Enhance Compliance Prompts**: Transform basic requests into comprehensive compliance-aware prompts
-- **Integrate CI/CD Validation**: Connect compliance to quality gates and project tracking
-
-### 🚀 Getting Compliance-Ready Results
-Instead of: `"Create an app.json file"`
-Use: `"Create AppSource-compliant app.json with proper metadata, dependency management, and validation following AppSource publishing requirements"`
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Check if this is AppSource ready"
-BETTER: "Validate this Business Central extension against AppSource requirements from AppSourcePublishing/appsource-requirements.md, including metadata compliance, object naming conventions, accessibility standards, and marketplace validation checklist"
-EDUCATIONAL_NOTE: "Compliance validation prompts should reference specific requirements, include multiple validation areas (metadata, naming, accessibility), and consider marketplace validation. This ensures comprehensive compliance checking rather than partial validation."
--->
+> **📋 For comprehensive AI instruction patterns, see [Shared Templates](../shared-templates.md#ai-instruction-templates)**
+>
+> This guide enables Copilot to detect AppSource context, suggest compliance proactively, enhance compliance prompts, and integrate CI/CD validation.
 
 ---
 

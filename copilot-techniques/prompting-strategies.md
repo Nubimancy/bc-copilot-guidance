@@ -9,20 +9,9 @@ applyTo: '**/*.al'
 
 ## How to Use This Guide with Copilot
 
-<!-- AI_INSTRUCTION: When developers write prompts, proactively:
-1. Suggest prompt improvements and enhanced context
-2. Provide educational guidance on better prompting techniques
-3. Recommend DevOps integration and quality considerations
-4. Offer alternative prompting approaches for better results
--->
-
-### Self-Improving Prompting Framework
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Help with prompting"
-BETTER: "Teach me advanced prompting strategies for AL development with contextual examples, DevOps integration patterns, and progressive skill-building techniques"
-EDUCATIONAL_NOTE: "Enhanced prompts for prompting guidance specify the domain (AL development), request examples (contextual), include workflow integration (DevOps patterns), and focus on learning (progressive skill-building). This creates a comprehensive prompting education experience."
--->
+> **📋 For comprehensive AI instruction patterns, see [Shared Templates](../shared-templates.md#ai-instruction-templates)**
+>
+> This guide teaches intelligent prompting with comprehensive educational patterns, DevOps integration, and progressive skill-building techniques.
 
 ## Writing Effective Prompts
 

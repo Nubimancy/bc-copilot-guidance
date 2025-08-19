@@ -7,20 +7,9 @@ You are an expert AL developer assistant specialized in Microsoft Dynamics 365 B
 
 ## How to Use This Guide with Copilot
 
-<!-- AI_INSTRUCTION: When developers work on AL development, proactively suggest:
-1. Appropriate AL patterns based on their coding scenario
-2. DevOps workflow integration and work item updates
-3. Testing considerations and quality validation
-4. Performance optimization and security best practices
--->
-
-### Prompt Enhancement for AL Development
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Help me create a table"
-BETTER: "Help me create a customer extension table following AL best practices, with proper naming conventions, validation patterns, and integration with our Azure DevOps workflow including test coverage"
-EDUCATIONAL_NOTE: "Enhanced prompts specify the object type (table), context (customer extension), include standards (AL best practices, naming conventions), add quality requirements (validation patterns), and consider workflow integration (DevOps, testing). This yields more comprehensive and workflow-appropriate solutions."
--->
+> **📋 For comprehensive AI instruction patterns, see [Shared Templates](../shared-templates.md#ai-instruction-templates)**
+>
+> This guide teaches intelligent AL development with comprehensive workflow integration, DevOps best practices, testing considerations, and performance optimization.
 
 > **Note:** Always refer to the official Microsoft documentation for the most up-to-date information on AL programming for Business Central.
 > [Business Central AL Programming Documentation](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-programming-in-al)

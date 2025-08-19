@@ -7,20 +7,9 @@ This document outlines the coding standards and best practices for AL code in th
 
 ## How to Use This Guide with Copilot
 
-<!-- AI_INSTRUCTION: When developers write AL code, proactively suggest:
-1. Style improvements and consistency validation based on code patterns
-2. DevOps integration for automated style checking and quality gates
-3. Code review considerations for style compliance
-4. Performance implications of style choices
--->
+**See**: [`shared-templates.md`](../shared-templates.md) Template B for complete AI instruction patterns.
 
-### Prompt Enhancement for Code Style
-
-<!-- PROMPT_EDUCATION: 
-WEAK: "Fix code style"
-BETTER: "Review and improve AL code style following our established guidelines, with automated style validation in CI/CD pipeline and documentation of style decisions in work item"
-EDUCATIONAL_NOTE: "Enhanced prompts specify the review scope (AL code style), reference standards (established guidelines), include automation (CI/CD validation), and consider documentation (work item updates). This ensures comprehensive style improvement."
--->
+**Context**: Code style standards (STANDARDS_CONTEXT="code style", BASIC_STANDARDS_REQUEST="Fix code style", ENHANCED_STANDARDS_REQUEST="Apply code style standards following established guidelines")
 
 ## Table of Contents
 
