@@ -1,6 +1,22 @@
 # AI AGENT BEHAVIORAL INSTRUCTIONS 🤖
 
-**WHEN HELPING WITH BUSINESS CENTRAL DEVELOPMENT, FOLLOW THESE OPERATIONAL RULES**
+**WHEN HELPING WITH BUSINESS CENTRAL DEVELOPMENT IN THIS ATOMIC TOPIC REPOSITORY**
+
+## 🏗️ REPOSITORY ARCHITECTURE AWARENESS
+
+### **ATOMIC TOPIC STRUCTURE**
+This repository uses an atomic topic architecture:
+- **134 focused topics** in `/areas/[functional-area]/` directories  
+- Each topic covers **exactly one concept** with practical examples
+- Topics discovered via **JSON indexes**, not hierarchical navigation
+- Every topic has YAML frontmatter and companion `-samples.md` file
+
+### **TOPIC DISCOVERY SYSTEM**
+When helping users find relevant guidance:
+- **Reference specific atomic topics** by name and area (e.g., `/areas/error-handling/errorinfo-patterns.md`)
+- **Use functional areas** for broader guidance (ai-assistance, architecture-design, code-creation, etc.)
+- **Never reference deleted files** (al-development-guide.md, coding-standards.md, object-patterns.md, etc.)
+- **Link to JSON indexes** for programmatic topic discovery
 
 ## 🚨 MANDATORY FIRST STEPS
 
@@ -93,10 +109,10 @@ This planning approach ensures we build something that meets professional BC dev
 ## 🎯 CORE BEHAVIORAL RULES
 
 ### ALWAYS DO THIS:
-✅ **Reference specific sections** from bc-copilot-guidance when applicable  
+✅ **Reference specific atomic topics** from `/areas/[functional-area]/` when applicable  
 ✅ **Include working AL code examples** with proper context comments  
 ✅ **Explain the business reasoning** behind technical suggestions  
-✅ **Suggest related guidance sections** for deeper learning  
+✅ **Suggest related atomic topics** for deeper learning  
 ✅ **Include error handling** in every code example  
 ✅ **Ask clarifying questions** when requirements are unclear  
 ✅ **Validate user understanding** after complex explanations  
@@ -104,12 +120,13 @@ This planning approach ensures we build something that meets professional BC dev
 ### NEVER DO THIS:  
 ❌ **Display code without explanation** or context  
 ❌ **Give generic advice** that ignores BC-specific constraints  
-❌ **Suggest patterns** that contradict bc-copilot-guidance  
+❌ **Suggest patterns** that contradict atomic topic guidance  
+❌ **Reference deleted files** (al-development-guide.md, coding-standards.md, etc.)
 ❌ **Skip error handling** in code examples  
 ❌ **Assume user experience level** without assessment (except default assumptions)
 ❌ **Provide outdated AL patterns** or deprecated approaches  
 ❌ **Ignore community focus** (no proprietary tool assumptions)
-❌ **Provide specific guidance** when project context is insufficient (template projects)
+❌ **Create hub/index navigation** (use atomic topics directly)
 
 ### EXCEPTION: TEMPLATE PROJECTS
 When working with template/starter projects (HelloWorld.al, minimal structure), you MUST ask clarifying questions about business requirements because generic advice would be unhelpful.
@@ -120,18 +137,18 @@ When working with template/starter projects (HelloWorld.al, minimal structure), 
 
 ### WHEN USER ASKS FOR CODE HELP:
 1. **Assess complexity** of their request
-2. **Reference relevant bc-copilot-guidance sections**  
+2. **Reference relevant atomic topics** from `/areas/[functional-area]/`
 3. **Provide working code example** with business context
 4. **Explain pattern choices** and alternatives
-5. **Suggest testing approach**
-6. **Recommend related learning** from the guidance
+5. **Suggest testing approach** from `/areas/testing/`
+6. **Recommend related atomic topics** for deeper learning
 
 ### WHEN USER ASKS FOR ARCHITECTURE ADVICE:
 1. **Understand business context** and requirements
-2. **Reference modern-al-patterns** for applicable principles  
+2. **Reference `/areas/architecture-design/`** for applicable principles  
 3. **Consider extensibility** and upgrade implications
-4. **Suggest validation approach**
-5. **Point to relevant workflow guides** in ai-assistance/
+4. **Suggest validation approach** from `/areas/testing/`
+5. **Point to relevant workflow atomic topics** in `/areas/project-workflow/`
 
 ### WHEN USER ASKS FOR CODE REVIEW:
 1. **Direct them to appropriate prompt templates** in ai-assistance/prompt-libraries/
@@ -188,16 +205,16 @@ Only after planning is complete:
 - Implement with testing alongside development
 
 #### **PHASE 3: QUALITY VALIDATION**
-Use `testing-validation/quality-validation.md` for comprehensive review:
-- Code quality validation against bc-copilot-guidance standards
-- Performance and security validation  
-- Testing completeness verification
-- Documentation and maintainability review
+Use atomic topics from `/areas/testing/` and `/areas/code-review/` for comprehensive review:
+- Code quality validation against atomic topic standards
+- Performance validation using `/areas/performance-optimization/` topics
+- Testing completeness using `/areas/testing/` guidance  
+- Error handling validation using `/areas/error-handling/` patterns
 
 ### ENFORCE PLANNING WORKFLOW:
 - **Template projects REQUIRE comprehensive planning** before any code development
-- **Established projects** can proceed with targeted guidance for specific challenges
-- **Always reference quality-validation.md** for the complete development lifecycle checklist
+- **Established projects** can proceed with targeted atomic topic guidance for specific challenges
+- **Always reference testing and validation atomic topics** for quality assurance
 
 ---
 

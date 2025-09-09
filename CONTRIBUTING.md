@@ -2,15 +2,54 @@
 
 Thank you for your interest in contributing to this community-driven Business Central development guide! Your contributions help make AI-enhanced BC development accessible to developers worldwide.
 
-## How to Contribute
+## Repository Overview
 
-We welcome all types of contributions:
-- **Bug fixes** and corrections
-- **New content** and guides  
-- **Code examples** and samples
-- **Improved explanations** and clarity
-- **Community resources** and links
-- **Translation** and localization
+This repository uses a **strict atomic topic architecture** where each piece of guidance covers exactly one focused concept. This approach ensures that AI systems (and humans) can quickly find precise, actionable guidance without wading through broad topics.
+
+**Key principle:** Every contribution must follow our atomic topic rules - this isn't optional, it's what makes the repository valuable for AI-enhanced development.
+
+## Document Contents
+
+**Essential Rules (Read First):**
+- [Content Standards](#content-standards) - Atomic topic architecture and requirements
+- [Getting Started](#getting-started) - Quick setup and workflow
+
+**Detailed Guidance:**
+- [Types of Contributions](#types-of-contributions) - What you can contribute
+- [Review Process](#review-process) - How contributions are evaluated
+- [Community Guidelines](#community-guidelines) - How we work together
+- [Development Setup](#development-setup) - Technical requirements
+- [Quick Reference](#quick-reference) - Cheat sheet for common tasks
+
+---
+
+## Content Standards
+
+### 🔬 Atomic Topic Architecture Rules
+
+**This repository follows strict atomic topic principles. ALL contributions must adhere to these rules:**
+
+#### **1. Atomic Topic Structure**
+- Each topic covers **exactly one focused concept** (e.g., "Variable Naming Patterns", not "Development Standards")
+- Topics live in `/areas/[functional-area]/[topic-name].md`
+- **Samples Policy**: Create companion `[topic-name]-samples.md` files **only when practical AL code examples add value**
+  - **WITH samples**: Technical implementation patterns, code structures, AL object examples
+  - **WITHOUT samples**: Process frameworks, analysis methodologies, checklists, communication strategies
+
+#### **2. Required YAML Frontmatter**
+Every atomic topic file must include complete YAML frontmatter:
+
+```yaml
+---
+title: "Specific Topic Title"
+description: "Clear description of what this topic covers"
+area: "functional-area-name" 
+difficulty: "beginner|intermediate|advanced"
+object_types: ["Table", "Page", "Codeunit"] # AL object types this applies to
+variable_types: ["Record", "RecordRef", "JsonObject"] # Complex AL variable types only
+tags: ["tag1", "tag2", "tag3"] # Searchable keywords
+---
+```
 
 ## Getting Started
 
@@ -41,6 +80,21 @@ Follow our content standards (see below) when making changes.
 
 ### 4. Test Your Changes
 
+**📋 MANDATORY: Run Validation Scripts**
+
+Before submitting any pull request, you **MUST** run our validation scripts to ensure atomic topic compliance:
+
+```powershell
+# Validate frontmatter for all atomic topics
+.\tools\Validate-FrontMatter.ps1
+
+# Validate and rebuild type indexes
+.\tools\Validate-TypeIndexes.ps1
+```
+
+Both scripts must show **0 errors** and **100% success rate** before your PR can be accepted.
+
+**Additional Testing:**
 - **Validate markdown formatting** using a markdown previewer
 - **Test code examples** in a BC development environment  
 - **Check links** to ensure they work correctly
@@ -59,7 +113,41 @@ git push origin feature/your-contribution-name
 # Create pull request on GitHub
 ```
 
-## Content Standards
+---
+
+## Types of Contributions
+
+We welcome these types of contributions:
+
+### 📝 New Atomic Topics
+- Choose **single, focused concepts** not already covered
+- Follow atomic topic structure with proper frontmatter
+- Create both topic file AND samples file
+- Run validation scripts to ensure compliance
+- Place in appropriate `/areas/[functional-area]/` directory
+
+### 🐛 Bug Reports and Fixes
+- Use issue templates provided
+- Include specific examples of incorrect information
+- Reference issue numbers in commits
+- Verify fixes against authoritative sources
+
+### 💡 Sample File Enhancements
+- Add practical, copy-paste ready code examples
+- Include real-world scenarios demonstrating the topic
+- Focus on working code with explanatory comments
+- Test all examples thoroughly before submission
+
+### 🤖 Specialist Instructions
+- Create or enhance BC specialist persona instructions in `/bc-specialists/`
+- Follow specialist instruction template and naming conventions
+- Ensure specialists align with functional areas and atomic topic coverage
+- Include clear expertise boundaries and collaboration patterns
+- Test specialist effectiveness with real development scenarios
+
+---
+
+## Writing Style and Code Standards
 
 ### Writing Style
 
@@ -152,55 +240,7 @@ last_updated: "2025-01-17"
 - **Include community resources** and external links
 - **Maintain link accuracy** and update broken links
 
-## Types of Contributions
-
-### 🐛 Bug Reports and Fixes
-
-**When reporting bugs:**
-- Use the issue template provided
-- Include specific examples of incorrect information
-- Suggest corrections when possible
-- Test your understanding against official documentation
-
-**When fixing bugs:**
-- Reference the issue number in your commit
-- Include explanation of what was incorrect
-- Verify fix against authoritative sources
-
-### 📝 Content Improvements
-
-**New Guides:**
-- Choose topics not already covered
-- Follow the established structure and style
-- Include practical examples and real-world scenarios
-- Test all code examples thoroughly
-
-**Enhancing Existing Content:**
-- Improve clarity and readability
-- Add missing information or examples  
-- Update outdated information
-- Expand on topics that need more detail
-
-### 💡 New Features
-
-**New Sections:**
-- Propose new major sections via GitHub Issues first
-- Ensure they fit the overall repository structure
-- Include comprehensive content plan
-- Consider maintenance requirements
-
-**Code Examples:**
-- Add practical, real-world examples
-- Include step-by-step implementation guides
-- Provide context for when to use each approach
-- Test examples in multiple BC versions when relevant
-
-### 🌍 Translations
-
-While the primary language is English, we welcome:
-- **Localized examples** for specific regions/countries
-- **Cultural context** for business scenarios
-- **Region-specific resources** and community links
+---
 
 ## Review Process
 

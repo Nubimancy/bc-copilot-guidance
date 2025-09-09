@@ -38,16 +38,18 @@ Whether you're a solo developer, part of a team, or contributing to the communit
 
 ## 🚀 Quick Start
 
-**Common Scenarios**:
-- **New to BC Development** → [Getting Started Guide](getting-started/) → [Core Development](core-development/)
-- **First AI-Enhanced Project** → [Copilot Techniques](copilot-techniques/) → [Core Principles](getting-started/core-principles.md)
-- **Writing Better Code** → [Coding Standards](core-development/coding-standards.md) → [Modern AL Patterns](modern-al-patterns/)
-- **Better Error Handling** → [Modern Error Handling](core-development/modern-error-handling.md)
-- **Testing Strategy** → [Testing Guide](testing-validation/testing-strategy.md)
-- **Performance Issues** → [Optimization Guide](performance-optimization/optimization-guide.md)
-- **AppSource Publishing** → [AppSource Requirements](appsource-publishing/appsource-requirements.md)
-- **AI Prompting Help** → [Prompting Strategies](copilot-techniques/prompting-strategies.md)
-- **Project Planning** → [Development Lifecycle](project-management/feature-development-lifecycle.md)
+**Find Atomic Topics by Area**:
+- **AI Assistance** → [/areas/ai-assistance/](areas/ai-assistance/) - AI-enhanced development workflows  
+- **Architecture & Design** → [/areas/architecture-design/](areas/architecture-design/) - SOLID principles, patterns, anti-patterns
+- **Code Creation** → [/areas/code-creation/](areas/code-creation/) - AL object creation and business logic
+- **Code Formatting** → [/areas/code-formatting/](areas/code-formatting/) - Style standards and documentation
+- **Error Handling** → [/areas/error-handling/](areas/error-handling/) - ErrorInfo patterns and best practices
+- **Integration** → [/areas/integration/](areas/integration/) - APIs, events, and external systems
+- **Naming Conventions** → [/areas/naming-conventions/](areas/naming-conventions/) - Object and variable naming
+- **Performance** → [/areas/performance-optimization/](areas/performance-optimization/) - SetLoadFields, queries, optimization
+- **Project Workflow** → [/areas/project-workflow/](areas/project-workflow/) - DevOps, CI/CD, automation
+- **Testing** → [/areas/testing/](areas/testing/) - Test strategies, data patterns, validation
+- **AppSource Compliance** → [/areas/appsource-compliance/](areas/appsource-compliance/) - Marketplace requirements
 
 ### 🔌 Plug-and-Play Setup (PowerShell)
 
@@ -96,54 +98,64 @@ git submodule update --remote --merge copilot-guidance
 
 ## 📁 Repository Structure
 
-### **Core Development Workflows**
-- **[core-development/](core-development/)** - AL objects, business logic, and fundamental patterns
-- **[modern-al-patterns/](modern-al-patterns/)** - SOLID principles, clean architecture, and extensibility patterns
-- **[testing-validation/](testing-validation/)** - Testing strategies and quality assurance
-- **[performance-optimization/](performance-optimization/)** - Performance tuning and optimization
-- **[appsource-publishing/](appsource-publishing/)** - Marketplace compliance and publishing
+### **🔬 Atomic Topic Architecture**
 
-### **AI-Enhanced Development**
-- **[ai-assistance/](ai-assistance/)** - Experience-based AI guidance, prompt libraries, and adaptive development workflows
-- **[copilot-techniques/](copilot-techniques/)** - GitHub Copilot strategies, prompting, and AI-assisted development
-- **[getting-started/](getting-started/)** - Onboarding guides for AI-enhanced BC development
+This repository uses an **atomic topic structure** where each concept is broken down into focused, self-contained topics with practical examples:
 
-### **Project Management & Standards**
-- **[project-management/](project-management/)** - Development lifecycle and workflow patterns
-- **[examples/](examples/)** - Sample projects and real-world scenarios
+- **[/areas/](areas/)** - All development topics organized by functional area (134 atomic topics)
+  - Each topic has clear YAML frontmatter for discoverability
+  - Every topic includes a companion `-samples.md` file with practical examples
+  - Topics are discovered via JSON indexes, not hierarchical navigation
+
+### **🤖 Agent Discovery System**
+- **[object-types-index.json](areas/object-types-index.json)** - Maps AL object types to relevant topics
+- **[variable-types-index.json](areas/variable-types-index.json)** - Maps variable types to applicable guidance
+
+### **🧙‍♂️ Specialist Instruction Files**
+- **[bc-specialists/](bc-specialists/)** - AI specialist personas for domain-specific guidance
+
+### **🛠️ Development Tools**
+- **[tools/](tools/)** - PowerShell validation scripts for maintaining quality and consistency
 
 ## 🌟 Key Features
 
-### **AI-Enhanced Development**
+### **🔬 Atomic Topic Structure**
+- **134 focused topics** covering every aspect of BC development
+- **Companion sample files** with practical, copy-paste examples
+- **JSON-based discovery** for agents and developers
+- **Consistent YAML frontmatter** for easy categorization and search
+
+### **🤖 AI-Enhanced Development**
 - **Comprehensive prompting strategies** for GitHub Copilot
 - **Context-aware development patterns** that work with AI assistance
 - **Best practices** for AI-human collaboration in AL development
+- **Specialist personas** for domain-specific AI guidance
 
-### **Complete Development Lifecycle**
+### **🏗️ Complete Development Lifecycle**
 - **Standards-based approach** from planning to deployment
 - **Quality gates** and validation strategies
 - **Performance optimization** techniques
 - **AppSource compliance** guidelines
 
-### **Community-Driven**
+### **👥 Community-Driven**
 - **Open source** and freely available
-- **Contribution-friendly** with clear guidelines
+- **Contribution-friendly** with clear atomic topic guidelines
 - **Real-world examples** from community experiences
-- **Regularly updated** based on community feedback
+- **Validation tools** to maintain quality and consistency
 
 ## 🛠️ Common Development Tasks
 
-**Quick Reference Links**:
+**Quick Reference - Find Topics by Need**:
 - **👥 BC Specialists** → [Specialist Team](bc-specialists/README.md) → Choose expert help for your specific challenge
-- **Naming Conventions** → [naming-conventions](core-development/naming-conventions.md)
-- **Code Style** → [coding-standards](core-development/coding-standards.md)
-- **Error Handling** → [error-handling](core-development/error-handling.md)
-- **Object Patterns** → [object-patterns](core-development/object-patterns.md)
-- **Testing Strategy** → [testing-strategy](testing-validation/testing-strategy.md)
-- **Performance Tuning** → [optimization-guide](performance-optimization/optimization-guide.md)
-- **API Integration** → [integration-patterns](integration-deployment/integration-patterns.md)
-- **AppSource Preparation** → [appsource-requirements](appsource-publishing/appsource-requirements.md)
-- **AI Prompting** → [prompting-strategies](copilot-techniques/prompting-strategies.md)
+- **Naming Patterns** → [/areas/naming-conventions/](areas/naming-conventions/) → Variable, object, prefix naming
+- **Code Quality** → [/areas/code-formatting/](areas/code-formatting/) → Style standards, documentation
+- **Error Handling** → [/areas/error-handling/](areas/error-handling/) → ErrorInfo patterns, progressive disclosure
+- **Object Creation** → [/areas/code-creation/](areas/code-creation/) → Tables, codeunits, business logic
+- **Testing Strategy** → [/areas/testing/](areas/testing/) → Test patterns, data management
+- **Performance Tuning** → [/areas/performance-optimization/](areas/performance-optimization/) → SetLoadFields, query optimization
+- **API Integration** → [/areas/integration/](areas/integration/) → Events, external systems
+- **AppSource Preparation** → [/areas/appsource-compliance/](areas/appsource-compliance/) → Marketplace requirements
+- **AI Assistance** → [/areas/ai-assistance/](areas/ai-assistance/) → Prompting, workflows, collaboration
 
 ## 🤝 Contributing
 
@@ -169,7 +181,7 @@ See our **[Contributing Guidelines](CONTRIBUTING.md)** for how to get involved.
 
 ### **AI Development**
 - [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
-- [AI-Assisted Development Best Practices](copilot-techniques/)
+- [AI-Assisted Development Topics](/areas/ai-assistance/) - Atomic guidance for AI-enhanced BC development
 
 ## 🎖️ Recognition
 
@@ -181,7 +193,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🤖 For AI Agents
 
-If you're an AI assistant working in this repository, please refer to [.copilot-instructions.md](.copilot-instructions.md) for specialized guidance on content standards, code patterns, and repository-specific context.
+If you're an AI assistant working in this repository, please refer to [copilot-instructions.md](copilot-instructions.md) for specialized guidance on the atomic topic structure, content standards, and repository-specific context.
 
 ---
 
