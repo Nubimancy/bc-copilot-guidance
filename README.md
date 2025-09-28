@@ -1,5 +1,17 @@
 # Business Central Copilot Guidance 🧙‍♂️⚡
 
+> **⚠️ DEPRECATED REPOSITORY ⚠️**
+> 
+> This repository has been **deprecated** in favor of the new **BC-Code-Intelligence** system, which provides enhanced AI-powered assistance for Business Central development.
+> 
+> **🔄 Migration Information:**
+> - **New Knowledge Base**: [BC-Code-Intelligence](https://github.com/JeremyVyska/bc-code-intelligence) - Comprehensive BC development knowledge and patterns
+> - **MCP Integration**: [BC-Code-Intelligence-MCP](https://github.com/JeremyVyska/bc-code-intelligence-mcp) - Model Context Protocol server for seamless AI integration
+> 
+> **For existing users:** While this repository will remain available for reference, all new development and updates are happening in the BC-Code-Intelligence ecosystem. Please migrate to the new system for the latest features and ongoing support.
+> 
+> **📋 [View Detailed Migration Guide](DEPRECATION.md)** for complete migration information and timeline.
+
 **A comprehensive, community-driven guide for AI-enhanced Business Central development**
 
 ## Overview
@@ -37,6 +49,8 @@ Whether you're a solo developer, part of a team, or contributing to the communit
 *Choose your specialist based on your current development challenge and activate their specialized expertise for your AI-assisted development sessions!*
 
 ## 🚀 Quick Start
+
+> **🔔 Notice:** For new projects, we recommend using the [BC-Code-Intelligence system](https://github.com/JeremyVyska/bc-code-intelligence) instead of this deprecated repository.
 
 **Common Scenarios**:
 - **New to BC Development** → [Getting Started Guide](getting-started/) → [Core Development](core-development/)
@@ -147,13 +161,15 @@ git submodule update --remote --merge copilot-guidance
 
 ## 🤝 Contributing
 
-We welcome contributions from the Business Central community! Whether you're:
+> **📋 Contributions Redirected:** This repository is no longer accepting contributions. Please contribute to the new [BC-Code-Intelligence](https://github.com/JeremyVyska/bc-code-intelligence) system instead.
+
+We welcome contributions from the Business Central community in the new BC-Code-Intelligence ecosystem! Whether you're:
 - **Sharing best practices** from your development experience
 - **Adding new patterns** or techniques you've discovered
 - **Improving documentation** and examples
 - **Reporting issues** or suggesting improvements
 
-See our **[Contributing Guidelines](CONTRIBUTING.md)** for how to get involved.
+Please visit the [BC-Code-Intelligence repository](https://github.com/JeremyVyska/bc-code-intelligence) to get involved with the active project.
 
 ## 📚 Additional Resources
 
